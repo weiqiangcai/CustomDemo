@@ -93,10 +93,39 @@
         _dataSource = [NSMutableArray arrayWithArray:@[
                                                        @"1.数组中的元素完全倒叙",
                                                        @"字符串",
+                                                       @"结构体",
                                                        ]];
     }
     return _dataSource;
 }
+#pragma mark --3.结构体
+-(void)structDemo{
+    
+    //   自定义的结构体
+    struct Test {
+        int ID;
+        CGFloat  height;
+        __unsafe_unretained NSArray *group;
+    };
+    typedef struct Test Test;
+    
+    //    封装数据
+    Test tmpTest;
+    tmpTest.height = 80.0;
+    tmpTest.ID = 100;
+    tmpTest.group = @[@"你猜我是谁",
+                      @"你就是猜不着"];
+    //    NSLog(@"id==%d,height==%f",tmpTest.ID,tmpTest.height);
+    
+    NSValue *customValue = [NSValue valueWithBytes:&tmpTest objCType:@encode(struct Test)];
+    //    取出数据
+    Test tmpTest1;
+    [customValue getValue:&tmpTest1];
+    NSLog(@"id==%d,height==%f,group==%@",tmpTest1.ID,tmpTest1.height,tmpTest1.group);
+    
+    
+}
+
 #pragma mark --1.数组中的元素完全倒叙
 /**
  * 1.数组中的元素完全倒叙
