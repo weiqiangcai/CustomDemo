@@ -47,6 +47,7 @@
 		22A9DD131FBD975300672F09 /* CHOINewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A9DD121FBD975300672F09 /* CHOINewFeatureViewController.m */; };
 		22A9DD161FBD976C00672F09 /* CHOIGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A9DD151FBD976C00672F09 /* CHOIGuide.m */; };
 		22A9DD191FBD978400672F09 /* CHOISaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A9DD181FBD978400672F09 /* CHOISaveTool.m */; };
+		729D9173202996D100EF42BD /* NSObject+CHOIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D9172202996D100EF42BD /* NSObject+CHOIModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,8 @@
 		22A9DD151FBD976C00672F09 /* CHOIGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHOIGuide.m; sourceTree = "<group>"; };
 		22A9DD171FBD978400672F09 /* CHOISaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHOISaveTool.h; sourceTree = "<group>"; };
 		22A9DD181FBD978400672F09 /* CHOISaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHOISaveTool.m; sourceTree = "<group>"; };
+		729D9171202996D100EF42BD /* NSObject+CHOIModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CHOIModel.h"; sourceTree = "<group>"; };
+		729D9172202996D100EF42BD /* NSObject+CHOIModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CHOIModel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,6 +519,8 @@
 				2288E6DE1FA82C2E00D19C7D /* UIView+CHOI.m */,
 				2288E6E61FA876D800D19C7D /* UIImage+CHOIImage.h */,
 				2288E6E71FA876D800D19C7D /* UIImage+CHOIImage.m */,
+				729D9171202996D100EF42BD /* NSObject+CHOIModel.h */,
+				729D9172202996D100EF42BD /* NSObject+CHOIModel.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -775,6 +780,7 @@
 				2288E6DA1FA82A5200D19C7D /* CHOIMyLotterViewController.m in Sources */,
 				229870891FB155FA00372985 /* CHOINextViewController.m in Sources */,
 				2288E6D41FA82A0600D19C7D /* CHOIHallTableViewController.m in Sources */,
+				729D9173202996D100EF42BD /* NSObject+CHOIModel.m in Sources */,
 				2288E6EE1FA9773B00D19C7D /* CHOIMenu.m in Sources */,
 				2215F1131FCE8731003A178C /* CHOISetting.m in Sources */,
 				2288E6E51FA85B3500D19C7D /* CHOINavigationController.m in Sources */,
